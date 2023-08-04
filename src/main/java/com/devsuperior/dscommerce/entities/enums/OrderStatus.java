@@ -1,4 +1,4 @@
-package com.devsuperior.dscommerce.enums;
+package com.devsuperior.dscommerce.entities.enums;
 
 public enum OrderStatus {
 
