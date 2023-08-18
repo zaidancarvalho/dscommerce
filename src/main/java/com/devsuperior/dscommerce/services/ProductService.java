@@ -14,7 +14,7 @@ import com.devsuperior.dscommerce.repositories.ProductRepository;
 import com.devsuperior.dscommerce.services.execeptions.DatabaseException;
 import com.devsuperior.dscommerce.services.execeptions.ResourceNotFoundException;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 @Service
 public class ProductService {

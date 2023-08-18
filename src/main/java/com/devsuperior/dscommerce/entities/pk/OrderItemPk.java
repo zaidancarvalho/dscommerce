@@ -3,12 +3,15 @@ package com.devsuperior.dscommerce.entities.pk;
 import com.devsuperior.dscommerce.entities.Order;
 import com.devsuperior.dscommerce.entities.Product;
 
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import java.io.Serializable;
+
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Embeddable
-public class OrderItemPk {
+public class OrderItemPk implements Serializable{
+	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
 	@JoinColumn(name = "order_id")
