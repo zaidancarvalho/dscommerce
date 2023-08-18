@@ -10,24 +10,18 @@ import com.devsuperior.dscommerce.entities.User;
 import com.devsuperior.dscommerce.repositories.UserRepository;
 
 @Service
-public class UserService implements UserDetailsService{
+public class UserService implements UserDetailsService {
 
 	@Autowired
 	private UserRepository repository;
 
 	@Override
-	public UserDetails loeadUserByUserName(String username) throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
 		User user = repository.findByEmail(username);
 		if (user == null) {
 			throw new UsernameNotFoundException("Email not found");
 		}
 		return user;
-	}
-
-	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
