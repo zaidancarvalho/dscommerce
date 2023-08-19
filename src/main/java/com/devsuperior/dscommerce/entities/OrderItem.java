@@ -1,6 +1,6 @@
 package com.devsuperior.dscommerce.entities;
 
-import com.devsuperior.dscommerce.entities.pk.OrderItemPk;
+import com.devsuperior.dscommerce.entities.pk.OrderItemPK;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 public class OrderItem {
 	
 	@EmbeddedId
-	private OrderItemPk id = new OrderItemPk();
+	private OrderItemPK id = new OrderItemPK();
 	
 	private Integer quantity;
 	private Double price;

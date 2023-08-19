@@ -10,7 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Embeddable
-public class OrderItemPk implements Serializable{
+public class OrderItemPK implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
@@ -21,7 +21,7 @@ public class OrderItemPk implements Serializable{
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
-	public OrderItemPk() {
+	public OrderItemPK() {
 	}
 
 	public Order getOrder() {
