@@ -1,52 +1,76 @@
-# Projeto web services com Spring Boot e JPA/Hibernate
+# DSCOMMERCE
 
 
 # Sobre o projeto
-O DSCommerce é um aplicativo que simula um e-commerce, oferecendo um catálogo de produtos, páginas detalhadas de produtos, carrinho de compras, tela de login e
-uma área administrativa exclusiva para usuários com a função de administrador.
+O DSCommerce é um e-commerce. Você pode explorar diferentes produtos, ver detalhes, adicionar ao carrinho e finalizar compras. 
+Para complementar a segurança, há um login. Além disso, foi criado uma área para diferenciar quem é o usuário e o adminstrador, 
+fazendo que exista uma função específica para cada papel.
 
 Criado pelo orientador [Nelio Alves](https://github.com/devsuperior) na plataforma [DevSuperior](https://devsuperior.com.br/).
 
-## Objetivo do curso:
+## Objetivo do projeto:
 - Implementar modelo de domínio
-- Estruturar camadas lógicas: resource, service, repository
-- Configurar banco de dados de teste (H2)
+- Arquitetura em camadas
+- Operações CRUD
 - Povoar o banco de dados
-- CRUD - Create, Retrieve, Update, Delete
-- Tratamento de exceções
+- Fluxos de caso de uso
+- Diferenciação de perfis e controle de acesso
+- Interação com o produto
+- Autenticação e segurança
+- Integração e relatórios administrativos
+- Tratamento de exceções personalizadas
 
 
 # Apresentação do projeto
 ## Modelo conceitual
-<img src="https://user-images.githubusercontent.com/98346506/228305392-e954cf8d-3b35-4103-89bf-390a9ee6dae0.png" width = 70% height = 70%>
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/119de74b-e403-493e-81f0-b801f1da8630" width = 70% height = 70%>
 
-## Instância de domínio
-<img src="https://user-images.githubusercontent.com/98346506/228319506-147eb693-0114-4da0-bc01-4dbcf8b80d19.png" width = 70% height = 70%>
+## Caso de uso
+O escopo funcional do sistema consiste nos seguintes casos de uso:
+
+| Caso de uso         | Visão geral                                                                                             | Acesso         |
+|:--------------------|:--------------------------------------------------------------------------------------------------------|:---------------|
+| Manter produtos     | CRUD de produtos, podendo filtrar itens pelo nome                                                       | Somente Admin  |
+| Manter categorias   | CRUD de categorias, podendo filtrar itens pelo nome                                                     | Somente Admin  |
+| Manter usuários     | CRUD de usuários, podendo filtrar itens pelo nome                                                       | Somente Admin  |
+| Gerenciar carrinho  | Incluir e remover itens do carrinho de compras, bem como alterar as quantidades do produto em cada item | Público        |                                                                              
+| Consultar catálogo  | Listar produtos disponíveis, podendo filtrar produtos pelo nome                                         | Público        |                                                                              
+| Sign up             | Cadastrar-se no sistema                                                                                 | Público        |                                              
+| Login               | Efetuar login no sistema                                                                                | Público        |                                               
+| Registrar pedido    | Salvar no sistema um pedido a partir dos dados do carrinho de compras informado                         | Usuário logado |                                                                       
+| Atualizar perfil    | Atualizar o próprio cadastro                                                                            | Usuário logado |                         
+| Visualizar pedidos  | Visualizar os pedidos que o próprio usuário já fez                                                      | Usuário logado |
+| Registrar pagamento | Salvar no sistema os dados do pagamento de um pedido                                                    | Somente Admin  |                                                                        
+| Reportar pedidos    | Relatório de pedidos, podendo ser filtrados por data                                                    | Somente Admin  |
+
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/4b52d840-9e5d-44b4-8b25-656b9376b843" width = 70% height = 70%>
 
 ## Camada lógica
-<img src="https://user-images.githubusercontent.com/98346506/228305369-5373ac57-d212-41cd-958a-2b0b742a2081.png" width = 70% height = 70%>
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/68c7f346-093c-4055-9226-9f5c73d57f1b" width = 70% height = 70%>
 
 ## Spring Tools Suite - IDE
-<img src="https://user-images.githubusercontent.com/98346506/228305374-3c9c2223-a40c-4ae1-a6d1-456066416d37.png" width = 70% height = 70%>
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/e3ddb6eb-4d81-4eea-b774-6dde89d21d7f" width = 70% height = 70%>
 
 ## H2 Database
-<img src="https://user-images.githubusercontent.com/98346506/228305353-5d426570-9ffa-45d1-9836-62814d9bc9fb.png" width = 70% height = 70%>
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/abff9add-c55f-4519-932f-027895d7a193" width = 70% height = 70%>
 
 ## Postman
-<img src="https://user-images.githubusercontent.com/98346506/228305396-c706e6ef-b5ad-456b-91fb-c0ff44a7c128.png" width = 70% height = 70%>
+<img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/6c14a133-a703-46d3-b769-047c67c4fb4d" width = 70% height = 70%>
 
 
 # Tecnologias utilizadas
 ## Back end
 - Java 17
-- Spring Tool Suite - IDE
-- Spring Boot 3.0.5
+- Spring Tool Suite
+- Spring Boot 2.7.3
 - JPA / Hibernate
 - Maven
 - H2 Database
 - Postman
-- Apache Tomcat
+- JWT
+- OAuth2
 - JSON
+- Spring Validation
   
 # Como executar o projeto
 
@@ -56,7 +80,7 @@ Criado pelo orientador [Nelio Alves](https://github.com/devsuperior) na platafor
 #clonar repositório
 git clone linkDoMeuRepositorio
 
-#abrir o SpringBoot e escolher a pasta onde está o projeto
+#abrir sua IDE e escolher a pasta onde está o projeto
 exemplo: springboot/projetoCLonado
 
 #executar o projeto
@@ -72,4 +96,5 @@ Felipe Carvalho Fernandez
 https://www.linkedin.com/in/fernandez-felipe/
 
 # Agradecimento
-Agradecer ao [Nélio Alves](https://www.linkedin.com/in/nelio-alves/) da [DevSuperior](https://www.udemy.com/course/java-curso-completo/). Meu mentor nessa jornada incrível como desenvolvedor back-end.
+Agradecer ao [Nélio Alves](https://www.linkedin.com/in/nelio-alves/) da [DevSuperior](https://devsuperior.com.br/).
+Meu mentor nessa jornada incrível como desenvolvedor back-end.
