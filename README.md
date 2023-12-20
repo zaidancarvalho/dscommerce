@@ -1,7 +1,12 @@
-# DSCOMMERCE
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/zaidancarvalho/dscommerce/blob/main/LICENSE)
- <img src="https://img.shields.io/badge/Spring_Boot  V2.7.3-F2F4F9?style=for-the-badge&logo=spring-boot"/>
- <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>  
+<h1 align="center">Dscommerce</h1>
+
+<p align="center">
+  <a href="https://github.com/zaidancarvalho/dscommerce/blob/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/react" alt="License" />
+  </a>
+  <img src="https://img.shields.io/badge/Spring_Boot%20V2.7.3-F2F4F9?style=for-the-badge&logo=spring-boot" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
+</p>
 
 
 # Sobre o projeto
@@ -22,7 +27,6 @@ Criado pelo orientador [Nelio Alves](https://github.com/devsuperior) na platafor
 - Autenticação e segurança
 - Integração e relatórios administrativos
 - Tratamento de exceções personalizadas
-
 
 # Apresentação do projeto
 ## Modelo conceitual
@@ -59,7 +63,6 @@ O escopo funcional do sistema consiste nos seguintes casos de uso:
 
 ## Postman
 <img src="https://github.com/zaidancarvalho/dscommerce/assets/98346506/6c14a133-a703-46d3-b769-047c67c4fb4d" width = 70% height = 70%>
-
 
 # Tecnologias utilizadas
 ## Back end
