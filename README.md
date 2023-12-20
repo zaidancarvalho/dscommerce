@@ -1,4 +1,4 @@
-<h1 align="center">Dscommerce</h1>
+<h1 align="center">DSCommerce</h1>
 
 <p align="center">
   <a href="https://github.com/zaidancarvalho/dscommerce/blob/main/LICENSE">
