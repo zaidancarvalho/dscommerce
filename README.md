@@ -1,4 +1,7 @@
 # DSCOMMERCE
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/zaidancarvalho/dscommerce/blob/main/LICENSE)
+ <img src="https://img.shields.io/badge/Spring_Boot  V2.7.3-F2F4F9?style=for-the-badge&logo=spring-boot"/>
+ <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>  
 
 
 # Sobre o projeto
@@ -72,13 +75,13 @@ O escopo funcional do sistema consiste nos seguintes casos de uso:
 - JSON
 - Spring Validation
   
-# Como executar o projeto
+# Como clonar o projeto
 
 ## Back end
 
 ```bash
 #clonar repositório
-git clone linkDoMeuRepositorio
+git clone git@github.com:zaidancarvalho/dscommerce.git
 
 #abrir sua IDE e escolher a pasta onde está o projeto
 exemplo: springboot/projetoCLonado
@@ -89,6 +92,16 @@ run as
 SpringBoot app
 ```
 
+# Como executar localmente
+
+- Ao executar o projeto, para acessar o banco de dados, acesse: http://localhost:8080/h2-console
+
+- Para realizar as requisições: GET/PUT/DELETE E UPDATE é preciso fazer o login.
+  
+   - Login como usuário: maria@gmail.com
+   - Login como administrador: alex@gmai.com
+   - Senha de ambos: 1234567
+
 # Autor
 
 Felipe Carvalho Fernandez
@@ -97,4 +110,5 @@ https://www.linkedin.com/in/fernandez-felipe/
 
 # Agradecimento
 Agradecer ao [Nélio Alves](https://www.linkedin.com/in/nelio-alves/) da [DevSuperior](https://devsuperior.com.br/).
+
 Meu mentor nessa jornada incrível como desenvolvedor back-end.
